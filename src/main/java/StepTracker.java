@@ -16,6 +16,8 @@ public class StepTracker
    return activedays;
  }
  public double averageSteps(){
+   if(totaldays==0)
+     return 0.0;
    return (double)steptotal/totaldays;
  }
  public void addDailySteps(int steps){
